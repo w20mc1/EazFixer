@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: EazFixer
-        path: EazFixer\bin\Debug\net472\EazFixer.exe
+        path: EazFixer\bin\Debug\net472\*
