@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
@@ -24,3 +23,8 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: Upload build
+      uses: actions/upload-artifact@v4
+      with:
+        name: EazFixer
+        path: EazFixer\bin\Debug\net472\EazFixer.exe
